@@ -32,3 +32,31 @@ curl -s -X PUT "https://brewpage.app/api/html/public/ejBrtDfNRA" \
   --data-binary @index.html
 
 Saved: 2026-11-21
+
+GITHUB (auto-deploy source)
+===========================
+Repo: https://github.com/ismail637172-svg/cont330-website
+Branch: main
+Local folder: /data/user/0/com.termux/files/home/.gemini/antigravity-cli/scratch/riyadh_leads/cont330_site
+
+CLOUDFLARE PAGES AUTO-DEPLOY SETUP (one time)
+=============================================
+1. Open https://dash.cloudflare.com/?to=/:account/pages
+2. Create project -> "Connect to Git" -> choose GitHub -> select repo: cont330-website
+3. Build settings:
+   - Framework preset: None
+   - Build command: (leave empty)
+   - Build output directory: /   (root - index.html is at repo root)
+4. Deploy. Every git push to main auto-deploys.
+
+TO UPDATE THE SITE LATER
+========================
+1. Edit index.html in the local folder (or on GitHub)
+2. cd cont330_site && git add . && git commit -m "update" && git push
+3. Cloudflare auto-deploys within ~30 seconds.
+
+GSC VERIFICATION ON PAGES
+=========================
+- Use URL-prefix property with the pages.dev URL
+- HTML file method: google0fe3b142e5b32fb1.html is at repo root -> served at https://<project>.pages.dev/google0fe3b142e5b32fb1.html
+- Or HTML tag method: tag already in index.html <head>
