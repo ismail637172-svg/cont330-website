@@ -58,3 +58,21 @@ GSC VERIFICATION ON PAGES
 - Use URL-prefix property with the pages.dev URL
 - HTML file method: google0fe3b142e5b32fb1.html is at repo root -> served at https://<project>.pages.dev/google0fe3b142e5b32fb1.html
 - Or HTML tag method: tag already in index.html <head>
+
+BLOG / BACKLINKS
+================
+Bilingual articles (3 topics x Arabic + English) are in the repo root:
+- renovation-guide-ar.html / renovation-guide-en.html
+- gypsum-ceiling-ar.html / gypsum-ceiling-en.html
+- contractor-checklist-ar.html / contractor-checklist-en.html
+Each has BlogPosting JSON-LD and a link back to the main site.
+
+Permanent backlinks (same content on GitHub Pages):
+https://ismail637172-svg.github.io/cont330-website/
+https://ismail637172-svg.github.io/cont330-website/renovation-guide-en.html
+https://ismail637172-svg.github.io/cont330-website/gypsum-ceiling-ar.html
+https://ismail637172-svg.github.io/cont330-website/contractor-checklist-en.html
+
+Temporary backlinks on brewpage (expire ~14 days):
+https://brewpage.app/public/vNVbyTdjnm
+https://brewpage.app/public/qokUp6RUKK
