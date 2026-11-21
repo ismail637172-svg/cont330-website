@@ -3,7 +3,8 @@ CONT-330 / CONT-340 WEBSITE BACKUP
 
 Files:
 - index.html        -> CONT-330 (ترميم وتشطيب الرياض) full site code
-                       Live: https://brewpage.app/public/ejBrtDfNRA
+                       Live: https://cont330-website.andromir.workers.dev/
+                       (old brewpage link retired - expires in 14 days)
                        Owner token: B7eJkq3kTzTbgFn9E7AtI59IKBdNl3sy
                        Tracking number: +966 55 533 7459 (0555337459)
                        GSC verification tag: bU_KQvYGBccsIvZMg--IW_4wUJar5h41vHctKu1Z6Os
@@ -26,10 +27,7 @@ IMPORTANT SETTINGS (index.html):
 - Hero + sections transparent so the scroll animation shows through
 
 UPDATE COMMAND (CONT-330):
-curl -s -X PUT "https://brewpage.app/api/html/public/ejBrtDfNRA" \
-  -H "X-Owner-Token: B7eJkq3kTzTbgFn9E7AtI59IKBdNl3sy" \
-  -H "Content-Type: text/html; charset=utf-8" \
-  --data-binary @index.html
+git add . && git commit -m "update" && git push   # Cloudflare auto-deploys
 
 Saved: 2026-11-21
 
