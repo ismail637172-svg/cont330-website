@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cont330-website.andromir.workers.dev/sitemap.xml
