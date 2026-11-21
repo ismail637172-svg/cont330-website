@@ -107,6 +107,7 @@ footer .cp{font-size:.72rem}
 .call{position:fixed;bottom:88px;inset-inline-end:20px;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#0c131f;display:flex;align-items:center;justify-content:center;font-size:1.4rem;text-decoration:none;z-index:100;box-shadow:0 6px 18px rgba(0,0,0,.4)}
 .hi{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
 @media(max-width:860px){.links{display:none;position:absolute;top:100%;inset-inline:0;background:var(--navy2);flex-direction:column;padding:18px;gap:13px;border-bottom:1px solid var(--line)}.links.open{display:flex}.burger{display:block}.hi{grid-template-columns:1fr}.hero{padding:54px 5vw 66px}section{padding:52px 0}.cta{padding:34px 20px}.galg,.svcg,.stpg,.qg{padding:0 5vw}}
+.blogsec{padding:60px 0}.blogg{max-width:1180px;margin:auto;padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.blogcard{background:rgba(27,39,58,.72);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:12px;padding:22px;text-decoration:none;display:block;transition:transform .2s}.blogcard:hover{transform:translateY(-3px)}.blogcard .tag{font-size:.65rem;letter-spacing:.2em;color:var(--gold2);font-weight:800}.blogcard h3{font-size:1rem;margin:8px 0;color:#fff}.blogcard p{color:var(--mut);font-size:.8rem;margin-bottom:12px}.blogcard .rd{color:var(--gold2);font-size:.76rem;font-weight:800}
 /* ===== full-page scroll animation background ===== */
 .bgfx{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:#080d16}
 .bgfx .seq{position:absolute;inset:0;background-repeat:no-repeat;background-size:1000% 1000%;background-position:0% 0%;will-change:background-position;transform:translateZ(0)}
@@ -125,7 +126,7 @@ footer .cp{font-size:.72rem}
   <a class="logo" href="#"><div class="m"><i class="fas fa-tools"></i></div><div><b data-i18n="brand">ترميم وتشطيب الرياض</b><span data-i18n="brandSub">RENOVATION &amp; FIT-OUT</span></div></a>
   <button class="burger" onclick="document.getElementById('ln').classList.toggle('open')"><i class="fas fa-bars"></i></button>
   <nav class="links" id="ln">
-   <a href="#services" data-i18n="navServices">خدماتنا</a><a href="#works" data-i18n="navWorks">أعمالنا</a><a href="#steps" data-i18n="navSteps">طريقة العمل</a><a href="#about" data-i18n="navAbout">من نحن</a>
+   <a href="#services" data-i18n="navServices">خدماتنا</a><a href="#works" data-i18n="navWorks">أعمالنا</a><a href="#steps" data-i18n="navSteps">طريقة العمل</a><a href="#about" data-i18n="navAbout">من نحن</a><a href="#blog" data-i18n="navBlog">المدونة</a>
    <button class="langbtn" id="langBtn" onclick="toggleLang()">EN</button>
    <a class="c" href="https://wa.me/966555337459" data-i18n="navCta">اطلب معاينة</a>
   </nav>
@@ -216,6 +217,19 @@ footer .cp{font-size:.72rem}
  </div>
 </section>
 
+
+<section id="blog" class="blogsec">
+ <div class="sh"><div class="k">OUR BLOG</div><h2 data-i18n="blogTitle">مقالات ونصائح</h2><p data-i18n="blogSub">دلائل عملية في الترميم والتشطيب — عربي وإنجليزي</p><div class="l"></div></div>
+ <div class="blogg">
+  <a class="blogcard" href="renovation-guide-ar.html"><span class="tag">ARABIC</span><h3>دليل ترميم المنازل بالرياض: من أين تبدأ؟</h3><p>خطوات عملية قبل أي ترميم: المعاينة، تحديد الأسباب، عرض السعر، والتنفيذ.</p><span class="rd">اقرأ المقال ←</span></a>
+  <a class="blogcard" href="renovation-guide-en.html"><span class="tag">ENGLISH</span><h3>Home Renovation in Riyadh: Where to Start</h3><p>Practical steps before any renovation: inspection, finding the real cause, a clear quote and execution.</p><span class="rd">Read article →</span></a>
+  <a class="blogcard" href="gypsum-ceiling-ar.html"><span class="tag">ARABIC</span><h3>جبس بورد وإضاءة مخفية: لمسات تغيّر المكان</h3><p>كيف تختار تصميم السقف والإضاءة المناسبة لصالة منزلك في الرياض.</p><span class="rd">اقرأ المقال ←</span></a>
+  <a class="blogcard" href="gypsum-ceiling-en.html"><span class="tag">ENGLISH</span><h3>Gypsum Ceilings and Hidden Lighting</h3><p>How to choose the right ceiling design and lighting for your Riyadh living room.</p><span class="rd">Read article →</span></a>
+  <a class="blogcard" href="contractor-checklist-ar.html"><span class="tag">ARABIC</span><h3>كيف تختار مقاول ترميم موثوق في الرياض؟</h3><p>قائمة تحقق بسيطة تحميك من التأخير والزيادات المخفية.</p><span class="rd">اقرأ المقال ←</span></a>
+  <a class="blogcard" href="contractor-checklist-en.html"><span class="tag">ENGLISH</span><h3>How to Choose a Reliable Renovation Contractor</h3><p>A simple checklist that protects you from delays and hidden extra costs.</p><span class="rd">Read article →</span></a>
+ </div>
+</section>
+
 <section style="padding-top:12px">
  <div class="cta">
   <h2 data-i18n="ctaTitle">جاهز لترميم بيتك؟</h2>
@@ -241,7 +255,7 @@ var T = {
  en: {
   top1:"Riyadh, Saudi Arabia", top2:"Est. 2018", top3:"WhatsApp",
   brand:"Renovation & Fit-Out Riyadh", brandSub:"RENOVATION & FIT-OUT",
-  navServices:"Services", navWorks:"Our Work", navSteps:"How We Work", navAbout:"About Us", navCta:"Request Inspection",
+  navServices:"Services", navWorks:"Our Work", navSteps:"How We Work", navAbout:"About Us", navBlog:"Blog", blogTitle:"Articles & Tips", blogSub:"Practical renovation guides - Arabic and English", navCta:"Request Inspection",
   heroKick:"Renovation & Fit-Out Contractor in Riyadh",
   heroTitle:"We renovate and renew your home with precise work from start to finish",
   heroDesc:"Home and villa renovation, full fit-out, painting, gypsum ceilings, tiles and marble, bathroom and kitchen renovation. Free on-site inspection and clear quote before any work.",
@@ -291,6 +305,7 @@ function applyLang(l){
 document.querySelectorAll('[data-i18n]').forEach(function(el){ T.ar[el.getAttribute('data-i18n')]=el.textContent; });
 function toggleLang(){ applyLang(curLang==='ar'?'en':'ar'); }
 
+.blogsec{padding:60px 0}.blogg{max-width:1180px;margin:auto;padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.blogcard{background:rgba(27,39,58,.72);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:12px;padding:22px;text-decoration:none;display:block;transition:transform .2s}.blogcard:hover{transform:translateY(-3px)}.blogcard .tag{font-size:.65rem;letter-spacing:.2em;color:var(--gold2);font-weight:800}.blogcard h3{font-size:1rem;margin:8px 0;color:#fff}.blogcard p{color:var(--mut);font-size:.8rem;margin-bottom:12px}.blogcard .rd{color:var(--gold2);font-size:.76rem;font-weight:800}
 /* ===== full-page scroll animation background ===== */
 (function(){
  var seq=document.getElementById('seq');
